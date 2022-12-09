@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./css/baseReboot.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Sticky Notes</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-fluid">
+        <div class="header__wrapper">
+          <div class="header__logo">Sticky Notes</div>
+          <div class="header__icon">
+            <div class="wrapper-btn">
+              <div class="header__text">Добавить заметку ></div>
+              <button class="plus_btn">
+                <img src="./img/plus.svg" alt="plus" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="sticky">
+      <div class="container">
+        <div class="row">
+          <ul class="sticky__wrapper" id="sticky-container">
+            <!-- <li class="sticky__item">
+              <div class="action-inner">
+                <span class="edit" >
+                  <img src="./img/pencil.svg" alt="pen" class="edit-img" data-title="Изменить"/>
+                </span>
+                <span class="close"></span>
+              </div>
+              <textarea name="item" class="area" value=""></textarea>
+              <button class="btn-edit-sticky">добавить</button>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <button class="btn-down plus_btn">
+      <img src="./img/plus.svg" alt="plus" />
+    </button>
+
+    <div class="modal-window" id="modal">
+      <div class="modal-window__close" id="modal-close"></div>
+      <textarea name="item" class="area" value=""></textarea>
+      <button class="btn-add-sticky">добавить</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
